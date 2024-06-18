@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sajal Jana - Developer Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: #282c34;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1em;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 4em 1em;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+        .intro {
+            padding: 4em 1em;
+            background: #61dafb;
+            color: #282c34;
+        }
+        .intro h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .intro p {
+            margin: 0.5em 0 0;
+            font-size: 1.2em;
+        }
+        .skills-container ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-container ul li {
+            margin: 0.5em;
+            padding: 0.5em 1em;
+            background: #fff;
+            border: 2px solid #61dafb;
+            border-radius: 4px;
+        }
+        .project, .job {
+            margin-bottom: 1.5em;
+            padding: 1em;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .project h3, .job h3 {
+            margin-top: 0;
+        }
+        .project a, .job a {
+            color: #61dafb;
+            text-decoration: none;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form label {
+            margin-top: 1em;
+            font-weight: bold;
+        }
+        form input, form textarea {
+            padding: 0.5em;
+            margin-top: 0.5em;
+            width: 100%;
+            max-width: 500px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        form button {
+            margin-top: 1.5em;
+            padding: 0.75em 1.5em;
+            background: #61dafb;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        form button:hover {
+            background: #21a1f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="intro">
+        <div class="intro">
+            <h1>Hello, I'm Sajal Jana</h1>
+            <p>Flutter, Node.js, PHP, and SQL Developer</p>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>Hi, I'm Sajal Jana, a passionate developer with expertise in Flutter, Node.js, PHP, and SQL. I enjoy building innovative solutions and learning new technologies.</p>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="skills-container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Flutter</li>
+                <li>Node.js</li>
+                <li>PHP</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+                <li>HTML/CSS</li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="projects-container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project Title</h3>
+                <p>Project description goes here. Describe the technologies used and the purpose of the project.</p>
+                <a href="project-link">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project Title</h3>
+                <p>Project description goes here. Describe the technologies used and the purpose of the project.</p>
+                <a href="project-link">View Project</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+    <section id="experience">
+        <div class="experience-container">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Job Title at Company</h3>
+                <p>Describe your role, responsibilities, and achievements in this position.</p>
+            </div>
+            <div class="job">
+                <h3>Job Title at Company</h3>
+                <p>Describe your role, responsibilities, and achievements in this position.</p>
+            </div>
+            <!-- Add more experiences as needed -->
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
